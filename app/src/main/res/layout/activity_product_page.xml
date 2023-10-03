@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_site_visit_req_LastUpdated4_http_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.ui.productPage.ProductPage">
+
+        <RelativeLayout
+            android:id="@+id/addtocrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/productPage_back_btn"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/baseline_arrow_back_24" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/ProductImagePager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@+id/productPage_back_btn"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/Grey"
+                android:orientation="horizontal" />
+
+            <com.willy.ratingbar.RotationRatingBar
+                android:id="@+id/simpleRatingBar"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/ProductImagePager"
+                android:layout_marginEnd="05dp"
+                android:layout_toStartOf="@id/RatingCount"
+                android:paddingRight="05dp"
+                app:srb_clickable="true"
+                app:srb_drawableEmpty="@drawable/outline_star_outline_24"
+                app:srb_drawableFilled="@drawable/star_vector"
+                app:srb_isIndicator="true"
+                app:srb_minimumStars="0"
+                app:srb_numStars="5"
+                app:srb_starHeight="@dimen/_15sdp"
+                app:srb_starPadding="@dimen/_3sdp"
+                app:srb_starWidth="@dimen/_15sdp"
+
+                app:srb_stepSize="0.01"
+
+                android:layout_marginTop="@dimen/_80sdp"
+
+                >
+
+            </com.willy.ratingbar.RotationRatingBar>
+
+            <TextView
+                android:id="@+id/RatingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductImagePager"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text=""
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/roboto_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/ViewAllRatimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/simpleRatingBar"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_toStartOf="@id/RatingCount"
+                android:text="View All"
+                android:textColor="@color/Primary"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Product_Save_Wishlist"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@+id/ViewAllRatimg"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="08dp"
+                android:layout_marginEnd="-2dp"
+
+                android:layout_marginBottom="-60dp"
+                android:layout_toStartOf="@id/ViewAllRatimg"
+                android:background="@drawable/like_outline" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Product_Share"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/ViewAllRatimg"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-46dp"
+
+                android:layout_marginBottom="-60dp"
+                android:layout_toStartOf="@id/ViewAllRatimg"
+                android:background="@drawable/ic_share" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductImagePager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-20dp"
+                app:dotsColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="16dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="true"
+                app:selectedDotColor="@color/Primary" />
+
+            <TextView
+                android:id="@+id/ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductImagePager"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/roboto_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/ProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductName"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/black"
+
+
+                />
+
+            <TextView
+                android:id="@+id/CurrentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductDescription"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="₹"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MRPPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CurrentPrice"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="8dp"
+                android:text="M.R.P ₹"
+                android:textColor="@color/Grey" />
+
+            <TextView
+                android:id="@+id/ProductDeleveryAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MRPPrice"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:text=""
+                android:textColor="#017612"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_Machine_Type"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ProductDeleveryAddress"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:id="@+id/machine_type_Head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ProductDeleveryAddress"
+
+                    android:text="Machine Type:"
+                    android:layout_marginLeft="05dp"
+                    android:textColor="@color/toolbar_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_machine_type"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ProductDeleveryAddress"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/machine_type_Head"
+                    android:text=""
+                    android:textColor="@color/black"
+
+                    android:layout_marginEnd="@dimen/_10sdp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_videoUrl"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll_Machine_Type"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_youtube_link_head"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product Video:"
+                    android:layout_marginLeft="05dp"
+                    android:textColor="@color/toolbar_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_youtube_link"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_youtube_link_head"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text=""
+
+                    android:fontFamily="@font/coda"
+                    android:textColor="@color/toolbar_color"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/Avalable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_videoUrl"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Available"
+                android:textColor="#03853D"
+
+                android:fontFamily="@font/coda"
+
+                />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/Qty"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/Avalable"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="#CAF1FF"
+                android:gravity="center_vertical"
+                android:hint="Qty"
+                android:paddingStart="@dimen/_15sdp"
+
+                android:scrollIndicators="top"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:spinner_arrow_show="true"
+                app:spinner_arrow_tint="@color/black"
+                app:spinner_divider_color="@color/black"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.5dp"
+                app:spinner_item_array="@array/Qty"
+                app:spinner_item_height="@dimen/_46sdp"
+                app:spinner_popup_max_height="120dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/no_stack"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductDeleveryAddress"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Currently Out Off Stack"
+                android:textColor="@color/colorRed"
+                android:visibility="gone"
+                />
+
+
+            <!--            android:layout_alignParentBottom="true"-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/AddtoCart"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/Qty"
+                android:layout_marginStart="@dimen/_15sdp"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/custom_edit_text"
+                android:backgroundTint="@color/pink_light"
+                android:fontFamily="@font/coda"
+
+                android:text="Add to Cart"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/BuyNow"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/Qty"
+
+                android:layout_marginStart="@dimen/_15sdp"
+
+                android:layout_toRightOf="@+id/AddtoCart"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/custom_edit_text"
+                android:backgroundTint="#FFC0CB"
+                android:fontFamily="@font/coda"
+                android:text="Buy Now" />
+            <!--            android:layout_alignParentBottom="true"-->
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_suggested_Products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addtocrt"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Suggested  Products "
+            android:textColor="@color/Primary"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/ProductPageSuggestedProductsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_suggested_Products"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_layout="@layout/homepage_product_recycle_view_loading"
+            app:shimmer_demo_layout_manager_type="grid"
+            app:spanCount="2"
+            tools:itemCount="10"
+            tools:listitem="@layout/productdetailspage_product_recycle_view" />
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

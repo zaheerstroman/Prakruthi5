@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".ui.ui.profile.SupportActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/support_back_btn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAKRUTHI"
+            android:textColor="@color/projectblue"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/ll_phone"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivcontacticon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/contact" />
+
+        <!--            android:text=""-->
+        <!--            android:textColor="@color/ProjectBlack"-->
+        <!--            android:text="040-40138904"-->
+
+        <TextView
+            android:id="@+id/tvcall1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivcontacticon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="040-40138904"
+            android:textAlignment="center"
+            android:textColor="@color/toolbar_color"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+
+        <!--            android:text="+91 - 93907 80314"-->
+        <TextView
+            android:id="@+id/tvcall2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvcall1"
+            android:layout_toRightOf="@id/ivcontacticon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingTop="05dp"
+            android:text="+91-9390780314"
+            android:textAlignment="center"
+            android:textColor="@color/toolbar_color"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/ll_email"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivmailicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_centerVertical="true"
+            android:src="@drawable/email_icon" />
+
+        <!--            android:text="info@prakruthiepl.com"-->
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_toRightOf="@id/ivmailicon"
+            android:padding="5dp"
+            android:text="info@prakruthiepl.com"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivlinkicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/link" />
+        <!--            android:text="7-1-617/A, Imperial Towers, 301, 3rd Floor,\nAmeerpet, Hyderabad, Telangana,\nIndia - 500038.#1-6-69/1/26/A/1, Paramount Apartment, 2nd Floor, DK Road, Balkampet, Ameerpet, Hyderabad - 500018"-->
+        <!--            android:text="#1-6-69/1/26/A/1, Paramount Apartment, 2nd Floor, DK Road, Balkampet, Ameerpet, Hyderabad - 500018."-->
+        <!--            android:text="7-1-617/A, Imperial Towers, 301, 3rd Floor,\nAmeerpet, Hyderabad, Telangana,\nIndia - 500038. \n#1-6-69/1/26/A/1, Paramount Apartment, 2nd Floor, DK Road, Balkampet, Ameerpet, Hyderabad - 500018.#1-6-69/1/26/A/1, Paramount Apartme"-->
+        <!--        android:text="7-1-617/A, Imperial Towers, 301, 3rd Floor,\nAmeerpet, Hyderabad, Telangana,\nIndia - 500038. \n#1-6-69/1/26/A/1, Paramount Apartment, 2nd Floor, DK Road, Balkampet, Ameerpet, Hyderabad - 500018.#1-6-69/1/26/A/1, Paramount Apartme"-->
+
+
+        <TextView
+            android:id="@+id/tvlink"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/ivlinkicon"
+            android:padding="5dp"
+            android:text="#1-6-69/1/26/A/1, \nParamount Apartment, \n2nd Floor, DK Road, Balkampet, Ameerpet, Hyderabad - 500018."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/profile_Support_id_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:paddingTop="@dimen/_5sdp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/ll_site_visit_req_Profile_Support"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="@dimen/_20sdp"-->
+    <!--            android:visibility="gone"-->
+    <!--            >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_10sdp"-->
+    <!--                android:layout_height="@dimen/_10sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:src="@drawable/ic_dashboard_black_24dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_support_id"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--                android:ellipsize="end"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:text=""-->
+    <!--                android:textColor="@color/toolbar_color"-->
+    <!--                android:textSize="@dimen/_18sdp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/ll_PS_site_visit_req_LastUpdated3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+
+    <!--            android:layout_marginStart="@dimen/_20sdp"-->
+    <!--            android:visibility="gone"-->
+    <!--            >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_10sdp"-->
+    <!--                android:layout_height="@dimen/_10sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:src="@drawable/contact" />-->
+    <!--            &lt;!&ndash;            user_Name_or_MobileNumber&ndash;&gt;-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_support_phone"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--                android:textColor="@color/toolbar_color"-->
+    <!--                android:textSize="@dimen/_15sdp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/ll_PS_site_visit_req_LastUpdated2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+
+    <!--            android:layout_marginStart="@dimen/_20sdp"-->
+    <!--            android:visibility="gone"-->
+    <!--            >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_10sdp"-->
+    <!--                android:layout_height="@dimen/_10sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:src="@drawable/email_icon" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_support_email"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--                android:layout_marginTop="@dimen/_3sdp"-->
+    <!--                android:ellipsize="end"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="@dimen/_15sdp" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/ll_site_visit_req_LastUpdated4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+
+    <!--            android:layout_marginStart="@dimen/_20sdp"-->
+    <!--            android:visibility="gone"-->
+    <!--            >-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_10sdp"-->
+    <!--                android:layout_height="@dimen/_10sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:src="@drawable/logout" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_support_address"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="@dimen/_15sdp" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+
+</LinearLayout>

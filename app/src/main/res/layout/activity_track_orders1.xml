@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.profile.myorders.TrackOrderActivity"
+
+    android:background="@drawable/profile_backgound"
+    >
+<!--    tools:context=".ui.ui.profile.trackorders.TrackOrdersActivity"-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tracking_order_back_btn"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/baseline_arrow_back_24" />
+
+
+    <RelativeLayout
+        android:id="@+id/my_tracker_orders_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_trackorders"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/coda"
+            android:text="Track Orders"
+            android:textAlignment="center"
+            android:textColor="#00B5FF"
+            android:textSize="30dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_order_hash"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="16dp"
+            android:text="ORDER #5465185165"
+            android:textColor="#00B5FF"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/purchases_date_time"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_order_hash"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/coda"
+            android:text="Last updated date : 01-06-2023 "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_tracker_orders_RelativeLayout2"
+        android:layout_width="902dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_60sdp"
+
+        >
+        <ImageView
+            android:id="@+id/viewOrderConfirmPlaced11"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:visibility="gone"
+            android:background="@drawable/confirmed_product_prepared_ellipse29"
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderPlaced"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderPlaced" />
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorBlack"
+            android:paddingTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/viewOrderConfirmPlaced"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse277"
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderPlaced"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderPlaced" />
+
+
+
+
+        <!--        app:layout_constraintEnd_toEndOf="@+id/imageOrderPlaced"-->
+
+
+        <TextView
+            android:id="@+id/textConfirmOrderPlaced"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="50dp"
+
+
+            android:layout_toEndOf="@id/viewOrderConfirmPlaced"
+            android:text="@string/confirm_order"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toEndOf="@+id/imageOrderPlaced"
+
+            />
+        <!--        android:layout_marginEnd="@id/textConfirmOrderPlaced"-->
+
+
+        <TextView
+            android:id="@+id/textConfirmOrderPlaced_Date_Time_Des"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="190dp"
+
+
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/textConfirmOrderPlaced"
+            app:layout_constraintStart_toStartOf="@+id/textConfirmOrderPlaced"
+            />
+
+
+        <ImageView
+            android:id="@+id/viewOrderConfirmedProductPrepared"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse29"
+            android:outlineAmbientShadowColor="@color/Green"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderConfirmed"
+
+            />
+        <!--        app:layout_constraintTop_toTopOf="@id/textProductPreparedOrderConfirmed"-->
+
+        <ImageView
+            android:id="@+id/imageOrderConfirmed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="270dp"
+            android:contentDescription="@string/access_code"
+            android:src="@drawable/email_icon"
+            app:layout_constraintStart_toEndOf="@+id/viewOrderConfirmedProductPrepared"
+            app:layout_constraintTop_toBottomOf="@+id/imageOrderPlaced"
+
+            android:visibility="gone"
+
+            />
+
+        <ImageView
+            android:id="@+id/viewOrderConfirmedSupporterProductPrepared"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="275dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse277"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderConfirmed"
+            app:layout_constraintEnd_toEndOf="@+id/imageOrderConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderConfirmed" />
+
+        />
+
+
+        <!--        app:layout_constraintEnd_toEndOf="@id/textProductPreparedOrderConfirmed"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/textProductPreparedOrderConfirmed"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/textProductPreparedOrderConfirmed"-->
+
+
+        <!--        textOrderConfirmed-->
+
+
+        <TextView
+            android:id="@+id/textProductPreparedOrderConfirmed"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="260dp"
+
+            android:layout_marginEnd="16dp"
+
+            android:layout_marginStart="40dp"
+
+
+            android:layout_toEndOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+            android:text="Product Prepared"
+            android:textColor="@color/black"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toEndOf="@+id/imageOrderConfirmed"
+
+            />
+        <!--        android:layout_marginEnd="@+id/textConfirmOrderPlaced"-->
+
+        <!--        app:layout_constraintStart_toEndOf="viewOrderConfirmedSupporter"-->
+        <!--        app:layout_constraintStart_toEndOf="imageOrderConfirmed"-->
+
+
+        <!--        android:text="Your order has been confirmed"-->
+        <TextView
+            android:id="@+id/textProductPreparedOrderConfirmedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="300dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textProductPreparedOrderConfirmed"
+            app:layout_constraintStart_toStartOf="@+id/textProductPreparedOrderConfirmed"
+
+            app:layout_constraintTop_toBottomOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+
+            />
+
+        <!--        app:layout_constraintStart_toStartOf="viewPlaceSupporter"-->
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="02dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/tracker_line6"
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintBottom_toTopOf="@+id/viewOrderConfirmedProductPrepared"
+            app:layout_constraintEnd_toEndOf="@+id/viewOrderConfirmPlaced"
+            app:layout_constraintStart_toStartOf="@+id/viewOrderConfirmPlaced"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrderConfirmPlaced"
+
+            />
+
+        <!--        //imp-->
+
+        <ImageView
+            android:id="@+id/viewOrderProcessedShipped"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            android:background="@drawable/confirmed_product_prepared_ellipse29"
+            android:outlineAmbientShadowColor="@color/Green"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed"
+
+            />
+
+        <!--        app:layout_constraintButtom_toTopOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/viewOrderPlaced"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/viewOrderPlaced"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/viewOrderPlaced"-->
+
+        <ImageView
+            android:id="@+id/imageOrderProcessed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="390dp"
+            android:contentDescription="Prakruthi"
+            android:src="@drawable/mypayment_vector"
+            app:layout_constraintStart_toEndOf="@+id/viewOrderProcessedShipped"
+            app:layout_constraintTop_toBottomOf="@+id/imageOrderConfirmed"
+
+            android:visibility="gone"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/viewProcessedSupporterShipped"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="387dp"
+            android:layout_marginBottom="4dp"
+
+            android:background="@drawable/confirmed_product_prepared_ellipse277"
+
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"
+            app:layout_constraintEnd_toEndOf="@+id/imageOrderProcessed"
+            app:layout_constraintStart_toStartOf="@+id/imageOrderProcessed"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed" />
+
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+
+
+        <TextView
+            android:id="@+id/textOrderProcessedShipped"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="378dp"
+            android:layout_marginEnd="10dp"
+            android:text="Shipped"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/viewProcessedSupporterShipped"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageOrderProcessed"
+
+            />
+
+        <TextView
+            android:id="@+id/textOrderProcessedShippedDate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="410dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textOrderProcessedShipped"
+            app:layout_constraintStart_toStartOf="@+id/viewOrderProcessedShipped"
+            app:layout_constraintTop_toBottomOf="@+id/viewProcessedSupporterShipped"
+
+            />
+        <!--        android:text="We are preparing your order"-->
+
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/viewProcessedSupporter"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textOrderProcessed"-->
+
+        <View
+            android:layout_width="02dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="28dp"
+
+            android:layout_marginTop="280dp"
+
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/tracker_line6"
+
+            app:layout_constraintBottom_toTopOf="@+id/viewOrderProcessedShipped"
+            app:layout_constraintEnd_toEndOf="@+id/viewOrderConfirmPlaced"
+            app:layout_constraintStart_toStartOf="@+id/viewOrderConfirmPlaced"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrderConfirmPlaced"
+
+            />
+
+        <ImageView
+            android:id="@+id/viewOrderReadyOutForDelivery"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="4dp"
+            android:alpha="0.5"
+            android:background="@drawable/confirmed_product_prepared_ellipse29"
+            android:outlineAmbientShadowColor="@color/Green"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderReady"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderReady"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageOrderReady"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="480dp"
+            android:alpha="0.5"
+            android:contentDescription="Aakruti"
+            android:src="@drawable/my_address_vector"
+            app:layout_constraintStart_toEndOf="@+id/viewOrderReadyOutForDelivery"
+            app:layout_constraintTop_toBottomOf="@+id/imageOrderProcessed"
+
+            android:visibility="gone"
+
+            />
+
+        <ImageView
+            android:id="@+id/viewReadySupporterOutForDelivery"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="498dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse277"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderReady"
+            app:layout_constraintStart_toStartOf="@+id/imageOrderReady"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderReady"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textReadyToPickupOutForDelivery"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/ready_to_pickup"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/viewReadySupporterOutForDelivery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageOrderReady" />
+
+        <TextView
+            android:id="@+id/textReadyToPickupOutForDeliveryDate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="520dp"
+
+            android:alpha="0.5"
+
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textReadyToPickupOutForDelivery"
+            app:layout_constraintStart_toStartOf="@+id/textReadyToPickupOutForDelivery"
+            app:layout_constraintTop_toBottomOf="@+id/viewReadySupporterOutForDelivery"
+
+            />
+
+
+        <View
+            android:id="@+id/linedown"
+            android:layout_width="02dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="4dp"
+
+            android:background="@drawable/tracker_line6"
+
+            app:layout_constraintBottom_toTopOf="@+id/viewOrderReadyOutForDelivery"
+            app:layout_constraintEnd_toEndOf="@+id/viewOrderProcessedShipped"
+            app:layout_constraintStart_toStartOf="@+id/viewOrderProcessedShipped"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrderProcessedShipped"
+
+            />
+
+        <!--        app:layout_constraintTop_toButtomOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/viewOrderConfirmed"-->
+
+        <!--        viewOrderPlaced-->
+
+        <!--        app:layout_constraintButtom_toTopOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/viewOrderConfirmed"-->
+
+
+        <ImageView
+            android:id="@+id/viewOrderPlaced23DeliveredShipped"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="625dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse29"
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderPlaced"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderPlaced" />
+
+
+        <View
+            android:id="@+id/viewPlaceSupporter23DeliveredShipped"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="620dp"
+            android:background="@drawable/confirmed_product_prepared_ellipse277"
+            android:outlineAmbientShadowColor="@color/Green"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOrderPlaced"
+            app:layout_constraintEnd_toEndOf="@+id/textConfirmOrderPlaced"
+            app:layout_constraintStart_toStartOf="@+id/imageOrderPlaced"
+            app:layout_constraintTop_toTopOf="@+id/imageOrderPlaced"
+
+            />
+
+        <TextView
+            android:id="@+id/textShippedDeliveredShipped"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="600dp"
+
+            android:layout_marginStart="40dp"
+
+            android:layout_marginEnd="16dp"
+
+            android:layout_toEndOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+            android:text="Delivered Shipped"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+
+            />
+        <!--        android:layout_marginEnd="@+id/textProductPreparedOrderConfirmed"-->
+
+        <!--        android:text="Your order has been confirmed"-->
+        <TextView
+            android:id="@+id/textShippedDeliveredShipped_Date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="630dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textShippedDeliveredShipped"
+            app:layout_constraintEnd_toEndOf="@+id/textShippedDeliveredShipped"
+
+            app:layout_constraintStart_toStartOf="@+id/viewOrderConfirmedSupporterProductPrepared" />
+
+
+        <View
+            android:id="@+id/viewOrderProcesseddown"
+            android:layout_width="02dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginBottom="4dp"
+
+            android:background="@drawable/tracker_line6"
+
+            android:outlineAmbientShadowColor="@color/Green"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/viewOrderConfirmedSupporterProductPrepared"
+
+            />
+
+        <!--        app:layout_constraintBottom_toTopOf="@id/viewShippedProductPrepared"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/viewShippedProductPrepared"-->
+
+        <!--        app:layout_constraintStart_toStartOf="@id/viewShippedProductPrepared"-->
+
+
+        <!--        <View-->
+        <!--            android:id="@+id/viewShippedProductPrepared"-->
+        <!--            android:layout_width="18dp"-->
+        <!--            android:layout_height="18dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginTop="@dimen/_524sdp"-->
+        <!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+        <!--            android:outlineAmbientShadowColor="@color/Green"-->
+        <!--            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/textShippedDeliveredShipped" />-->
+
+
+        <!--        <View-->
+        <!--            android:id="@+id/viewShippedOrderConfirmedSupporter"-->
+        <!--            android:layout_width="28dp"-->
+        <!--            android:layout_height="28dp"-->
+        <!--            android:layout_marginStart="15dp"-->
+        <!--            android:layout_marginTop="@dimen/_520sdp"-->
+        <!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+        <!--            android:outlineAmbientShadowColor="@color/Green"-->
+        <!--            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/textShipped"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/textShipped"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/textShipped" />-->
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
